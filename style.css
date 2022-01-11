@@ -1,0 +1,26 @@
+.field{
+    height: 400px;
+    border: 1px solid rgb(119, 15, 15);
+}
+.bat{
+    position: relative;
+    /* top: 120px; */
+    transition: transform 0.2s ease-in;
+}
+.ball{
+    height: 20px;
+    width: 20px;   
+    background: rgb(206, 5, 5);
+    border-radius: 50%;
+    position: relative;
+    left: 325px;
+    transition: transform 0.2s ease-in 0.2s;
+}
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+.field:hover .ball{
+    transform: translate(600px,-200px);
+}
+ 
